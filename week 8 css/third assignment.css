@@ -1,0 +1,151 @@
+
+.assign-one {
+    color: blue;
+    font-size: 50px ;
+}
+@media print {
+    .assign-one{
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+    }
+}
+/* .frsit-takleef */
+.second-takleef{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 20px;
+}
+.second-takleef div{
+    color:green;
+    border: 2px solid black;
+    text-align: center;
+    background-color: #eee;
+}
+@media (min-width:768px) and (max-width:1024px){
+    .second-takleef {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(2 , 1fr);
+        gap: 20px 20px ;
+    }
+    .second-takleef div{
+        color:rgb(128, 0, 13);
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+@media (min-width:0px) and (max-width:767px){
+    .second-takleef {
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-template-rows: repeat(4 , 1fr);
+        gap: 20px 20px ;
+    }
+    .second-takleef div{
+        color:black;
+        border: 2px solid black;
+        text-align: center;
+    }
+}
+/* .second-takleef */
+.third-takleef{
+    display: grid;
+    gap: 10px 10px ;
+    grid-template-areas: 
+    "one one one one "
+    "two two three three"
+    "four four four four";
+}
+.third-takleef div:nth-child(1){
+    grid-area: one;
+    background-color: #eee;
+    color: green;
+    text-align: center;
+}
+.third-takleef div:nth-child(2){
+    grid-area: two;
+    background-color: #eee;
+    color: green;
+    text-align: center;
+}
+.third-takleef div:nth-child(3){
+    grid-area: three;
+    background-color: #eee;
+    color: green;
+    text-align: center;
+}
+.third-takleef div:nth-child(4){
+    grid-area: four;
+    background-color: #eee;
+    color: green;
+    text-align: center;
+}
+@media (min-width:768px) and (max-width:1024px){
+    .third-takleef{
+        display: grid;
+        gap: 10px 10px ;
+        grid-template-areas: 
+        "one one one one one one "
+        "two two three three four four ";
+    }
+    .third-takleef div:nth-child(1){
+        grid-area: one;
+        background-color: #eee;
+        color: red;
+        text-align: center;
+    }
+    .third-takleef div:nth-child(2){
+        grid-area: two;
+        background-color: #eee;
+        color: red;
+        text-align: center;
+    }
+    .third-takleef div:nth-child(3){
+        grid-area: three;
+        background-color: #eee;
+        color: red;
+        text-align: center;
+    }
+    .third-takleef div:nth-child(4){
+        grid-area: four;
+        background-color: #eee;
+        color: red;
+        text-align: center;
+    }
+}
+@media (min-width:0px) and (max-width:767px){
+        .third-takleef{
+            display: grid;
+            gap: 10px 10px ;
+            grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four";
+        }
+        .third-takleef div:nth-child(1){
+            grid-area: one;
+            background-color: #eee;
+            color:black;
+            text-align: center;
+        }
+        .third-takleef div:nth-child(2){
+            grid-area: two;
+            background-color: #eee;
+            color: black;
+            text-align: center;
+        }
+        .third-takleef div:nth-child(3){
+            grid-area: three;
+            background-color: #eee;
+            color: black;
+            text-align: center;
+        }
+        .third-takleef div:nth-child(4){
+            grid-area: four;
+            background-color: #eee;
+            color: black;
+            text-align: center;
+        }
+    }
+    /* .third-takleef */

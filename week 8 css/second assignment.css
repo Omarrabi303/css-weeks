@@ -1,0 +1,24 @@
+.frist-takleef div.main.red{
+    color: red;
+}
+.second-takleef .parent:nth-child(2){
+    color: red;
+}
+.third-takleef .parent div:only-of-type.baby{
+    color: red;
+}
+.fourth-takleef > [title]:not(:nth-child(8)){
+    color:red ;
+}
+.fifth-takleef :nth-of-type(2) :nth-child(2){
+    color: red;
+}
+.six-takleef :not(:last-child) :nth-last-of-type(2){
+    color: red;
+}
+.seven-takleef :nth-child(1) :nth-child(5){
+    color: red;
+}
+.eight-takleef :is(:nth-child(2),:nth-child(3),:nth-child(5)){
+    color: red;
+}

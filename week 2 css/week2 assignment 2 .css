@@ -1,0 +1,46 @@
+.the1{
+    text-shadow:
+    1px 1px 0px red,
+    1.5px 1.5px 0px blue,
+    2px 2px 0px purple;
+}
+/* frist takleef */
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+}
+.three{
+    text-transform: lowercase;
+}
+/* second takleef */
+.frist,
+.second,
+.third{
+    background-color: aliceblue;
+    word-spacing: normal;
+    letter-spacing: normal;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 380px;
+}
+.third{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* third takleef */
+a{
+    text-transform: capitalize;
+    display: block;
+    background-color: rgb(5, 116, 79);
+    border-bottom: 5px solid rgb(2, 80, 66);
+    color: white;
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+}
+/* fouth takleef */

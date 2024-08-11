@@ -1,0 +1,52 @@
+.parent{
+    background-color: rgb(161, 166, 166);
+    width: 1000px ;
+    text-align: center;
+}
+.one ,.two ,.three ,.four ,.five ,.six ,.seven ,.eight ,.nine ,.ten{
+    background-color: gray;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    float: left;
+    padding: 0px;
+}
+.one{
+    width:calc((100% - 30px));
+}
+.two ,.three ,.four{
+    width: calc((100% - 60px)/3);
+}
+.five ,.six{
+    width: calc((100% - 45px)/2);
+}
+
+.seven ,.eight ,.nine ,.ten{
+    width: calc((100% - 75px)/4);
+}
+.clear{
+    clear: both;
+    margin: 0%;
+    padding: 0%;
+}
+/* frist takleef */
+.second div{
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}
+.normal{
+    background-color: gray;
+}
+.one1{
+    background-color: rgb(128 128 128 / 0.1 );
+}
+.two2{
+    background-color: gray;
+    opacity: 0.1;
+}
+/* second takleef */

@@ -1,0 +1,122 @@
+.frist-takleef .grid {
+    background-color: #ddd;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, calc((800px - 40px) / 3));
+    grid-template-rows: 70px 300px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    counter-reset: hi;
+    margin: 0 auto;
+}
+.frist-takleef .grid div{
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    counter-increment: hi;
+}
+.frist-takleef .grid div::before{
+    content: "Element"" "counter(hi);
+}
+
+/* .frist-takleef */
+.third-takleef .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 20px 20px ;
+    margin: 0 auto;
+}
+.third-takleef .grid div{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .third-takleef */
+.fourth-takleef .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin:0 auto;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-areas:
+    "eight eight eight"
+    "two two three "
+    "four five five"
+    "six five five"
+    "seven five five"
+    "one one one "
+    ;
+}
+.fourth-takleef .grid div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(31, 128, 198) !important;
+}
+.one{
+    grid-area: one;
+    background-color: aqua;
+}
+.two{
+    grid-area: two;
+    background-color: aqua;
+}
+.three{
+    grid-area: three;
+    background-color: aqua;
+}
+.four{
+    grid-area: four;
+    background-color: aqua;
+}
+.five{
+    grid-area: five;
+    background-color: aqua;
+}
+.six{
+    grid-area: six;
+    background-color: aqua;
+}
+.seven{
+    grid-area: seven;
+    background-color: aqua;
+}
+.eight{
+    grid-area: eight;
+    background-color: aqua;
+}
+/* .fourth-takleef */
+.fifth-takleef .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2 ,calc((800px - 60px) / 2));
+    grid-template-rows: 20px 20px ;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0 auto;
+}
+.fifth-takleef .grid div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(210, 16, 184);
+}

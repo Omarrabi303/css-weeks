@@ -1,0 +1,230 @@
+.frist-takleef div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #e6e5e5;
+    box-shadow: 4px 0 #ff9800,
+    -4px 0 blue;
+    color: #ff9800;
+    margin: 0 auto;
+}
+/* .frist-takleef */
+.second-takleef .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: space-between;
+}
+.second-takleef .parent div{
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    height: 25px;
+    flex-basis: calc((100% - 120px) / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .second-takleef */
+.third-takleef .parent{
+    display: flex;
+    flex-flow: row wrap;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+}
+.third-takleef .parent div{
+    width: 170px;
+    background-color: blueviolet;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-takleef .parent .one{
+    order: 6;
+    height: 25px;
+    align-self: self-end;
+}
+.third-takleef .parent .two{
+    order: 5;
+}
+.third-takleef .parent .five{
+    order: 4;
+}
+.third-takleef .parent .four{
+    order: 3;
+}
+.third-takleef .parent .three{
+    order: 2;
+    height: 25px;
+}
+/* .third-takleef */
+.fourth-takleef .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    flex-flow: column nowrap;
+}
+.fourth-takleef .parent div{
+    background-color: rgb(18, 117, 14);
+    width: 50%;
+    margin-top: 5px;
+    padding: 10px;
+    flex-basis: calc((100% - 75px) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-takleef .parent .one{
+    align-self: self-end;
+    width: 30px;
+}
+.fourth-takleef .parent .three{
+    align-self: self-end;
+    width: 30px;
+}
+/* .fourth-takleef */
+.fifth-takleef .parent{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    flex-flow: row wrap;
+}
+.fifth-takleef .parent div{
+    padding: 10px;
+    margin: 10px;
+    width: calc((100% - 160px) / 4);
+    height: calc(50% - 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fifth-takleef .parent .three{
+    background-color: brown ;
+    order: 4;
+}
+.fifth-takleef .parent .two{
+    background-color: greenyellow;
+    order: 3;
+    align-self: self-end;
+}
+.fifth-takleef .parent .one{
+    background-color: #ff9800;
+    order: 2;
+}
+.fifth-takleef .parent .four{
+    background-color: blueviolet;
+    order: 1;
+    align-self: self-end;
+}
+/* .fifth-takleef */
+.sixth-takleef .page{
+    width: 800px;
+    height: 440px;
+    background-color: aliceblue;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+.header,
+.main-area,
+.footer{
+    display: flex;
+}
+:root{
+    --color:rgb(236, 232, 232);
+    --padd:10px;
+}
+ul{
+    list-style-type: none;
+}
+.design{
+    order: 6;
+    height: 40px;
+    background-color: var(--color);
+    align-self:self-end;
+    margin-top: var(--padd);
+    width: 145px;
+    margin-bottom: var(--padd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    order: 5;
+    height: 40px;
+    background-color: var(--color);
+    align-self:self-end;
+    width: 622px;
+    margin-bottom: var(--padd);
+    margin-left: var(--padd);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.sidebar{
+    height: 280px;
+    background-color: var(--color);
+    padding: var(--padd);
+    margin: var(--padd);
+    width: 215px;
+    order: 4;
+}
+.content{
+    height: 280px;
+    background-color: var(--color);
+    padding: var(--padd);
+    margin: var(--padd);
+    width:500px;
+    order: 3;
+}
+.links{
+    height: 20px;
+    background-color: var(--color);
+    padding: var(--padd);
+    margin: var(--padd);
+    width:660px;
+    order: 2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo{
+    height: 20px;
+    background-color: var(--color);
+    padding: var(--padd);
+    margin: var(--padd);
+    width: 55px;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    padding: var(--padd);
+}
+/* .sixth-takleef */

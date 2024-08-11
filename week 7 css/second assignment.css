@@ -1,0 +1,166 @@
+:root{
+    --col--:rgb(255, 136, 0);
+    --cole--:rgb(0, 170, 255);
+}
+.frist-takleef h1{
+    width: 150px;
+    color: white;
+    background-color: var(--col--);
+    margin: 80px auto;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    position: relative;
+    line-height: 50px;
+}
+.frist-takleef h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--col--);
+    width: 100%;
+    height: 100%;
+    transform: skew(10deg, 10deg);
+    -webkit-transform: skew(10deg, 10deg);
+    -moz-transform: skew(10deg, 10deg);
+    -ms-transform: skew(10deg, 10deg);
+    -o-transform: skew(10deg, 10deg);
+    z-index: -1;
+}
+.frist-takleef h1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--col--);
+    width: 100%;
+    height: 100%;
+    transform: skew(350deg, 350deg);
+    -webkit-transform: skew(350deg, 350deg);
+    -moz-transform: skew(350deg, 350deg);
+    -ms-transform: skew(350deg, 350deg);
+    -o-transform: skew(350deg, 350deg);
+    z-index: -1;
+}
+/*.frist-takleef */
+.second-takleef h1{
+    width: 100px;
+    height: 80px;
+    background-color: var(--cole--);
+    color: white;
+    text-align: left;
+    line-height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.second-takleef h1::after{
+    content: "";
+    width: 100px;
+    height: 80px;
+    background-color: var(--cole--);
+    position: absolute;
+    top: 0;
+    left: -50px;
+    z-index: -1;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+.second-takleef h1::before{
+    content: "";
+    width: 25px;
+    height: 80px;
+    background-color: var(--cole--);
+    position: absolute;
+    top: 0;
+    left: -85px;
+    transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    -o-transform: skewX(20deg);
+}
+/* .second-takleef */
+.fourth-takleef div{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 200px auto;
+    transform-origin:bottom right ;
+    border-bottom: 4px solid black;
+
+}
+.fourth-takleef div::after{
+    content: "";
+    background-color: black;
+    border: 5px solid white;
+    width: 135.421356px;
+    height: 135.421356px;
+    /*in here i made this width as the diagonal of the black square is the side length of the other square 200/√2 and after that i respected the precence of the border*/
+    position: absolute;
+    left: -46px;
+    top: -40px;
+    transform-origin:bottom right ;
+    transform:rotate(45deg) ;
+    -webkit-transform:rotate(45deg) ;
+    -moz-transform:rotate(45deg) ;
+    -ms-transform:rotate(45deg) ;
+    -o-transform:rotate(45deg) ;
+}
+.fourth-takleef div::before{
+    content: "Elzero";
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    font-size: smaller;
+    color: white;
+}
+/* .fourth-takleef */
+.fifth-takleef div{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    margin: 0 auto;
+}
+.fifth-takleef div:hover{
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.fifth-takleef div::after,
+.fifth-takleef div::before{
+    width: 200px;
+    position: absolute;
+    height: 200px;
+    color: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.fifth-takleef div::after{
+    content: "front";
+    background-color:red ;
+}
+.fifth-takleef div::before{
+    content: "back";
+    background-color: green;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}

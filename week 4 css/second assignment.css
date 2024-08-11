@@ -1,0 +1,140 @@
+.first-takleef div{
+    width: 100px;
+    height: 100px;
+    background-color:#eee;
+    margin-left: 20px;
+    margin-right: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    box-shadow: 3px 3px 0 0 blue , -3px -3px 0 0 red;
+    counter-increment: hh;
+    position: relative;
+}
+.first-takleef div::after{
+    content: counter(hh);
+    background-color: black;
+    color: white;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    top: -8px;
+    right: 44%;
+    border-radius: calc((15px / 2));
+    -webkit-border-radius: calc((15px / 2));
+    -moz-border-radius: calc((15px / 2));
+    -ms-border-radius: calc((15px / 2));
+    -o-border-radius: calc((15px / 2));
+}
+.first-takleef div::before{
+    content: "Element";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    right: 25%;
+}
+/* .first-takleef */
+.second-takleef div{
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    box-shadow: 0 0 12px 0 black inset;
+    border-top-left-radius: 5px 15px;
+    border-top-right-radius: 100px 54px;
+    border-bottom-left-radius: 100px 54px;
+    border-bottom-right-radius: 5px 15px;
+}
+/* .second-takleef */
+.third-takleef {
+    width: 550px;
+    margin: auto;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.fristcard, .secondcard{
+    position: absolute;
+    background-color: #eee;
+    width: 260px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.linesep{
+    width: 2px;
+    height: 300px;
+    background-color:rgb(14, 174, 223);
+    position: absolute;
+    right: 50%;
+}
+.fristcard{
+    left: 0%;
+}
+.secondcard{
+    right: 0%;
+}
+.upper{
+    background-color: rgb(14, 174, 223);
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    line-height: 40px ;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 10px;
+    font-size: larger;
+}
+.centre{
+    margin: auto;
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
+    background-color: rgb(173, 175, 177);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 220px;
+    font-size: 40px;
+}
+.linesep::before{
+    content: "or";
+    position: absolute;
+    background-color: rgb(14, 174, 223);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 50%;
+    left: -390%;
+    text-align: center;
+    line-height: 20px;
+}
